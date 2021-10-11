@@ -2,13 +2,13 @@ import Link from "./Link";
 const LinkList = ({films}) => {
     const LinkNodes = films.map((film) => {
         return(
-            <Link name={film.name} url={film.url} />
+            <Link class="link" name={film.name} url={film.url} />
         )
     });
     return(
-        <>
+        <ul>
             {LinkNodes}
-        </>
+        </ul>
     )
 }
 

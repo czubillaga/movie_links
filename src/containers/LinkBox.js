@@ -1,5 +1,6 @@
 import { useState } from "react";
 import LinkList from "../components/LinkList";
+import MoreLinks from "../components/MoreLinks";
 
 const LinkBox = () => {
     
@@ -31,9 +32,13 @@ const LinkBox = () => {
     ]);
 
     return(
-        <>
+        <div class="container">
+            <h2>Upcoming Film Releases for UK</h2>
+            <hr></hr>
             <LinkList films={films} />
-        </>
+            <hr></hr>
+            <MoreLinks />
+        </div>
     )
 
 }
